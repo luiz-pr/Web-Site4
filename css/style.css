@@ -1,15 +1,14 @@
-body,
-p,
-h1,
-ul,
-li,
-blockquote {
+*{
+  color: #fff;
+}
+body, p, h1, ul, li, blockquote {
   padding: 0px;
-  margin: 0px;
+  margin-top: 0px;
 }
 
 body {
   font-family: 'Vollkorn', Georgia, Serif;
+  background-color: #1B1D20;
 }
 
 li {
@@ -21,9 +20,9 @@ a {
 }
 
 img {
-  max-width: 100%;
+  max-width: 50%;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 50%;
   display: block;
 }
 
@@ -61,57 +60,20 @@ img {
   }
 }
 
-/* HEADER */
-
-.header {
-  grid-area: header;
-  background: linear-gradient(135deg, #8844ee, #b07dfb);
-  padding: 30px;
-  align-items: center;
-  display: grid;
-  grid-template-columns: 1fr auto;
-}
-
 .logo {
   max-width: 200px;
 }
-
-.header nav ul {
-  display: flex;
-  flex-wrap: wrap;
+.header_logo {
+  width: 60%;
 }
 
-.header nav a {
-  display: block;
-  padding: 10px;
-  color: white;
-  font-size: 1.125em;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  transition: 0.1s;
-}
-
-.header nav a:hover {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.header li + li {
-  margin-left: 30px;
-}
 
 @media (max-width: 760px) {
-  .header {
-    grid-template-columns: auto;
-  }
+
   .logo {
     margin-bottom: 20px;
   }
-  .header nav a {
-    font-size: 1em;
-  }
-  .header li + li {
-    margin-left: 10px;
-  }
+
 }
 
 /* SIDENAV */
@@ -181,16 +143,18 @@ img {
 
 .content {
   grid-area: content;
-  margin: 0 auto;
+  margin: 10.3% auto;
+  background-color: #282A2D;
 }
 
 /* ANUNCIOS */
 
 .anuncios {
   grid-area: anuncios;
-  background: #fafbfc;
+  background: #1B1D20;
   display: grid;
   padding: 30px;
+  margin-top: 23%;
   grid-gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   align-content: start;
@@ -251,7 +215,7 @@ p {
 /* TITULO */
 
 .titulo {
-  color: #b07dfb;
+  color: rgb(12, 12, 12);
 }
 
 .titulo h1 {
@@ -276,7 +240,7 @@ p {
   width: 80px;
   text-align: center;
   box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
-  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  background: linear-gradient(135deg, rgb(0, 255, 0), rgb(30, 255, 41));
   border-radius: 5px;
   position: relative;
 }
